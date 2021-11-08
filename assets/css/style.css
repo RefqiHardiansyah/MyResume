@@ -892,6 +892,184 @@ section {
 }
 
 /*--------------------------------------------------------------
+# kalkulator
+--------------------------------------------------------------*/
+#container{
+	width: 1000px;
+	height: 550px;
+	margin: 20px auto;	
+  color: white;
+}
+
+#kalculator{
+	width: 320px;
+	height: 520px;
+    background-color: #313131;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgb(255, 75, 75), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#result{
+    height: 120px;
+    background-color: black;
+}
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+}
+#output{
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+#keyboard{
+    height: 400px;
+}
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.number, .empty{
+    background-color: #eaedef;
+}
+.operator{
+    background-color:lightgrey;
+}
+.number, .operator{
+    cursor: pointer;
+}
+.number:active, .operator:active{
+    font-size: 13px;
+}
+.number:focus, .operator:focus, .empty:focus{
+    outline: 0;
+}
+button:nth-child(4){
+    font-size: 20px;
+    background-color: #20b2aa;
+}
+button:nth-child(8){
+    font-size: 20px;
+    background-color: #ffa500;
+}
+button:nth-child(12){
+    font-size: 20px;
+    background-color: #f08080;
+}
+button:nth-child(16){
+    font-size: 20px;
+    background-color: #7d93e0;
+}
+button:nth-child(20){
+    font-size: 20px;
+    background-color: #9477af;
+}
+
+/*--------------------------------------------------------------
+# To Do List
+--------------------------------------------------------------*/
+.list {
+  color: white;
+}
+.todolist {
+  background-color: rgb(194, 194, 194);
+  padding: 20px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.title{
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.inputDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input{
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  height: 50px;
+  border-radius: 25px;
+  width: 350px;
+  margin: 0.25rem;
+  transition: .5s;
+  font-size: 1.15rem;
+}
+.add{
+  outline: none;
+  border: none;
+  height: 50px;
+  border-radius: 25px;
+  width: 50px;
+  background-color: #ff69b4;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: .5s;
+  margin: 0.25rem;
+}
+.add:hover{
+  opacity: 0.7;
+}
+.item{
+  padding: 20px;
+  border-bottom: 4px solid #fff;
+  margin-bottom: 1.5rem;
+  background-color: rgb(110, 110, 110);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.item_input{
+  background: none;
+  outline: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+  width: 800px;
+  margin-left: 50px;
+}
+.edit{
+  background: none;
+  outline: none;
+  border: none;
+  color: lime;
+  font-size: 1.4rem;
+  font-family: 'Hind', sans-serif;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  text-align: right
+  ;
+}
+.remove{
+  background: none;
+  outline: none;
+  border: none;
+  color: #E00;
+  font-size: 1.4rem;
+  font-family: 'Hind', sans-serif;
+  cursor: pointer;
+  text-align: right;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {

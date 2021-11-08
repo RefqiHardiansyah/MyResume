@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio - Resume</title>
+  <title>Portfolio - Kalkulator</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -56,54 +56,62 @@
 
   </header><!-- End Header -->
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
+  <main id="main">
+
+    <!-- ======= Kalkulator Section ======= -->
+    <section id="kalkulator" class="kalkulator">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Resume</h2>
+          <h2>Kalkulator & To Do List</h2>
         </div>
 
-        
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Ringkasan</h3>
-            <div class="resume-item pb-0">
-              <h4>Refqi Hardiansyah</h4>
-              <p><em>Seorang pelajar SMK yang sedang PKL (praktik Kerja Lapangan) sebagai WEB Developer.</em></p>
-              <ul>
-                <li>Jl. Duren, Gg. H. Marta, RT 01 RW 03 No.A5,
-                  Perumahan Griya Asri Bhumyamca 2
-                  Kota Depok, Jawa Barat 16434,
-                  Indonesia</li>
-                <li>+62 821 1436 8711</li>
-                <li>be.da.throne@gmail.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Pendidikan</h3>
-            <div class="resume-item">
-              <h4>SDN Rangkapan Jaya Baru</h4>
-              <h5>2011 - 2017</h5>
-              <p><em>Kota Depok, Jawa Barat</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>SMP Negeri 9 Depok</h4>
-              <h5>2017 - 2020</h5>
-              <p><em>Kota Depok, Jawa Barat</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>SMK Atlantis Plus</h4>
-              <h5>2020 - Sekarang</h5>
-              <p><em>Teknik Komputer Jaringan, Kota Depok, Jawa Barat</em></p>
-            </div>
+        <div id="container">
+          <div id="kalculator">
+              <div id="result">
+                  <div id="history">
+                      <p id="history-value"></p>
+                  </div>
+                  <div id="output">
+                      <p id="output-values"></p>
+                  </div>
+              </div>
+              <div id="keyboard">
+                  <button class="operator" id="clear">C</button>
+                  <button class="operator" id="backspace">CE</button>
+                  <button class="operator" id="%">%</button>
+                  <button class="operator" id="/">&#247;</button>
+                  <button class="number" id="7">7</button>
+                  <button class="number" id="8">8</button>
+                  <button class="number" id="9">9</button>
+                  <button class="operator" id="*">&times;</button>
+                  <button class="number" id="4">4</button>
+                  <button class="number" id="5">5</button>
+                  <button class="number" id="6">6</button>
+                  <button class="operator" id="-">-</button>
+                  <button class="number" id="1">1</button>
+                  <button class="number" id="2">2</button>
+                  <button class="number" id="3">3</button>
+                  <button class="operator" id="+">+</button>
+                  <button class="empty" id="empty"></button>
+                  <button class="number" id="0">0</button>
+                  <button class="empty" id="empty"></button>
+                  <button class="operator" id="=">=</button>
+              </div>
           </div>
-          </div>
-        </div>
-
       </div>
+
+      <div class="todolist">
+          <h1><span class="title">to do list</span></h1>
+          <div class="inputDiv">
+                 <input type="text" class="input" placeholder="What To Do?">
+                 <button class="add"><i>+</i></button>
+          </div>
+      </div>
+
     </section>
-    <!-- End Resume Section -->
+    
+    <!-- End Kalkulator Section -->
 
   </main>
   <!-- End #main -->
@@ -144,9 +152,11 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/kalkulator.js"></script>
 
 </body>
 
